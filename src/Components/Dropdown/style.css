@@ -1,0 +1,55 @@
+:local(.dropdown) {
+  display: inline-block;
+  text-align: justify; 
+  width: 200px;
+}
+:local(.dropdownTitle) {
+  color: #aaa;
+  padding: 5px 12px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+:local(.dropdownBody) {
+  background: #eee;
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
+}
+
+:local(.crossIconWrapper) {
+  text-align: right;
+}
+
+:local(.icon){
+  display: inline-block;
+  cursor: pointer;
+  font-size: 24px;
+  width: 14px;
+  height: 14px;
+}
+
+:local(.arrow) {
+  composes: icon;
+
+  margin: 0px 3px 0 5px;
+  vertical-align: middle;
+  width: 15px;
+  height: 20px;
+}
+:local(.arrowUp) {
+  composes: arrow;
+
+  background: url('angle-up-solid.svg') no-repeat;
+}
+
+:local(.arrowDown) {
+  composes: arrow;
+
+  background: url('angle-down-solid.svg') no-repeat;
+}
+
+:local(.crossIcon) {
+  composes: icon;
+
+  margin: 4px 5px 0 0;
+  background: url('times-solid.svg') no-repeat;
+}
